@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+
+    {
+
+        int a, b, c;// a program that compares 3 numbers to determine the largest and smallest 
+
+        printf("Enter three numbers: \na: ");
+
+        scanf("%d", &a);
+
+        printf("b: ");
+
+        scanf("%d", &b);
+
+        printf("c: ");
+
+        scanf("%d", &c);
+if (a>b)
+{
+if(a>c)
+{
+    printf("%d is the largest number",a);
+  }
+  else
+  {
+      printf("%d is the largest number", c);
+  }
+}
+     else if(b>c)
+    
+     printf("%d is the largest number",b);
+    
+     else
+     printf("%d is the largest number\n",c);
+    
+
+     if(a<b)
+     {
+         if(a<c)
+         printf("\n%d is the smallest number ",a);
+     }
+     else
+     {
+         printf("\n%d is the smallest number",c);
+     }
+    if (b<c)
+     printf("\n%d is the smallest number",b);
+   
+        return 0;
+
+    }

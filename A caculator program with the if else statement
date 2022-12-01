@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b,sum,diff,product,ratio,root,Pow;
+    int op;
+    printf("This is a program that takes in two numbers a and b and print their result\n");
+    printf("Enter a: ");
+    scanf("%f", &a);
+    printf("Enter b: ");
+    scanf("%f", &b);
+    printf("\n1. Addition");
+    printf("\n2. Subtraction");
+    printf("\n3. Multiplication");
+    printf("\n4. Division");
+    printf("\n5. root");
+    printf("\n6. Pow");
+    printf("\n Enter an operator: ");
+    scanf("%d", &op);
+    if (op == 1){
+    sum = a + b;//Doing Addition for the input a and b*//
+    printf("The sum is: %f", sum);
+    }
+    if (op == 2){
+    diff = a - b;// Doing Division for the input a and b*//
+    printf("The diff is: %f", diff);
+    }
+    if (op == 3){
+    product = a * b;//Doing Multiplication for the input a and b*//
+    printf("The product is: %f", product);
+    }
+    if (op == 4){
+    ratio = a / b;//Doing Division for the input a and b*//
+    printf("The ratio is: %f", ratio);
+    }
+    if (op == 5) {
+    root = pow(b, 1 / a);
+    printf("\n The root is: %f", root);
+    }
+    if (op == 6) {
+        Pow = pow(a,b);
+        printf("\nThe Pow is: %f", Pow);
+    }
+    else if(b == 0){
+    printf("\n Cannot divide by zero.");
+    }
+    return 0;
+}
+   
